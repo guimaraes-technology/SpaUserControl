@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Domain", "src\SpaUserControl.Domain\SpaUserControl.Domain.csproj", "{F658EAE5-E479-44DE-983E-BA0C9EE52A66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A8CF2C52-0E1B-460F-BF30-8B3FC222FA62}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.editorconfig = ..\..\.editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Common", "src\SpaUserControl.Common\SpaUserControl.Common.csproj", "{808657C6-6096-4641-A740-C2497595A842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Infrastructure", "src\SpaUserControl.Infrastructure\SpaUserControl.Infrastructure.csproj", "{68ED9A66-D6E8-4442-AF3B-8A00CEB28E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Business", "src\SpaUserControl.Business\SpaUserControl.Business.csproj", "{F0D33861-BAA1-401D-8D8C-D3083193AAD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Startup", "src\SpaUserControl.Startup\SpaUserControl.Startup.csproj", "{9EF6C08B-B8C2-4316-90BE-F2793056E2CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Api", "src\SpaUserControl.Api\SpaUserControl.Api.csproj", "{E2FC4108-3D5F-48A1-BEDC-FB69FA85750F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F658EAE5-E479-44DE-983E-BA0C9EE52A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F658EAE5-E479-44DE-983E-BA0C9EE52A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F658EAE5-E479-44DE-983E-BA0C9EE52A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F658EAE5-E479-44DE-983E-BA0C9EE52A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808657C6-6096-4641-A740-C2497595A842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808657C6-6096-4641-A740-C2497595A842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808657C6-6096-4641-A740-C2497595A842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808657C6-6096-4641-A740-C2497595A842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68ED9A66-D6E8-4442-AF3B-8A00CEB28E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68ED9A66-D6E8-4442-AF3B-8A00CEB28E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68ED9A66-D6E8-4442-AF3B-8A00CEB28E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68ED9A66-D6E8-4442-AF3B-8A00CEB28E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D33861-BAA1-401D-8D8C-D3083193AAD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D33861-BAA1-401D-8D8C-D3083193AAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D33861-BAA1-401D-8D8C-D3083193AAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D33861-BAA1-401D-8D8C-D3083193AAD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF6C08B-B8C2-4316-90BE-F2793056E2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF6C08B-B8C2-4316-90BE-F2793056E2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF6C08B-B8C2-4316-90BE-F2793056E2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF6C08B-B8C2-4316-90BE-F2793056E2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2FC4108-3D5F-48A1-BEDC-FB69FA85750F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2FC4108-3D5F-48A1-BEDC-FB69FA85750F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2FC4108-3D5F-48A1-BEDC-FB69FA85750F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2FC4108-3D5F-48A1-BEDC-FB69FA85750F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
