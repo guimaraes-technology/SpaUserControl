@@ -141,9 +141,18 @@
   <ItemGroup>
     <Compile Include="Helpers\UnityResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AuthorizationServerProvider.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SpaUserControl.Common\SpaUserControl.Common.csproj">
+      <Project>{808657c6-6096-4641-a740-c2497595a842}</Project>
+      <Name>SpaUserControl.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpaUserControl.Domain\SpaUserControl.Domain.csproj">
+      <Project>{f658eae5-e479-44de-983e-ba0c9ee52a66}</Project>
+      <Name>SpaUserControl.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SpaUserControl.Startup\SpaUserControl.Startup.csproj">
       <Project>{9ef6c08b-b8c2-4316-90be-f2793056e2ce}</Project>
       <Name>SpaUserControl.Startup</Name>
