@@ -26,7 +26,7 @@ namespace SpaUserControl.Business.Services
 
         public void ChangeInformation(string email, string name)
         {
-            var user = GetByEmail(email);
+            var user = repository.Get(email);
             user.ChangeName(name);
             user.Validate();
 
