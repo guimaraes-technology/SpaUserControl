@@ -1,6 +1,6 @@
-using SpaUserControl.Api.Models.Account;
+using SpaUserControl.Api.Models;
+using SpaUserControl.Common.Resources;
 using SpaUserControl.Domain.Contracts.Services;
-using SpaUserControl.Resource.Resources;
 using System;
 using System.Net;
 using System.Net.Http;
@@ -9,12 +9,12 @@ using System.Web.Http;
 
 namespace SpaUserControl.Api.Controllers
 {
-    [RoutePrefix="api/account"]
+    [RoutePrefix("api/account")]
     public class AccountController : ApiController
     {
-        private IUserService  service;
+        private readonly IUserService service;
 
-        public AcountController (IUserService service)
+        public AccountController(IUserService service)
         {
             this.service = service;
         }
@@ -24,7 +24,6 @@ namespace SpaUserControl.Api.Controllers
         public Task<HttpResponseMessage> Post(RegisterUserModel model)
         {
             var response = new HttpResponseMessage();
-
             try
             {
                 service.Register(model.Name, model.Email, model.Password, model.ConfirmPassword);
@@ -46,7 +45,6 @@ namespace SpaUserControl.Api.Controllers
         public Task<HttpResponseMessage> Put(ChangeInformationModel model)
         {
             var response = new HttpResponseMessage();
-
             try
             {
                 service.ChangeInformation(User.Identity.Name, model.Name);
@@ -68,7 +66,6 @@ namespace SpaUserControl.Api.Controllers
         public Task<HttpResponseMessage> Post(ChangePasswordModel model)
         {
             var response = new HttpResponseMessage();
-
             try
             {
                 service.ChangePassword(User.Identity.Name, model.Password, model.NewPassword, model.ConfirmNewPassword);
@@ -89,7 +86,6 @@ namespace SpaUserControl.Api.Controllers
         public Task<HttpResponseMessage> Post(ResetPasswordModel model)
         {
             var response = new HttpResponseMessage();
-
             try
             {
                 var password = service.ResetPassword(model.Email);
