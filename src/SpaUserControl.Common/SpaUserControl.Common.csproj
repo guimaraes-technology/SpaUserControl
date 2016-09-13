@@ -51,6 +51,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Errors.pt-BR.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Messages.pt-BR.Designer.cs">
+      <DependentUpon>Messages.pt-BR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
     <Compile Include="Validation\AssertionConcern.cs" />
     <Compile Include="Validation\EmailAssertionConcern.cs" />
     <Compile Include="Validation\PasswordAssertionConcern.cs" />
@@ -63,6 +73,14 @@
     <EmbeddedResource Include="Resources\Errors.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Errors.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages.pt-BR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.pt-BR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
