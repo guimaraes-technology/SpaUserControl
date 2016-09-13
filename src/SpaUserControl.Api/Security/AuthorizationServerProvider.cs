@@ -18,7 +18,7 @@ namespace SpaUserControl.Api.Security
             this.service = service;
         }
 
-        public override async Task ValidadeClientAuthentication(OAuthValidateClientAuthenticationContext context)
+        public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
         {
             context.Validated();
         }
